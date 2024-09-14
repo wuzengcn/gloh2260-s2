@@ -1,0 +1,505 @@
+<!DOCTYPE html>
+<html lang="" xml:lang="">
+  <head>
+    <title>GLOH 2260 Session 2: The methods of economics</title>
+    <meta charset="utf-8" />
+    <meta name="author" content="Wu Zeng, MD, PhD" />
+    <script src="libs/header-attrs-2.22/header-attrs.js"></script>
+    <link href="libs/remark-css-0.0.1/default.css" rel="stylesheet" />
+    <link href="libs/remark-css-0.0.1/rladies.css" rel="stylesheet" />
+    <link href="libs/remark-css-0.0.1/rladies-fonts.css" rel="stylesheet" />
+    <link href="libs/tile-view-0.2.6/tile-view.css" rel="stylesheet" />
+    <script src="libs/tile-view-0.2.6/tile-view.js"></script>
+    <link href="libs/panelset-0.2.6/panelset.css" rel="stylesheet" />
+    <script src="libs/panelset-0.2.6/panelset.js"></script>
+    <script src="libs/fabric-4.3.1/fabric.min.js"></script>
+    <link href="libs/xaringanExtra-scribble-0.0.1/scribble.css" rel="stylesheet" />
+    <script src="libs/xaringanExtra-scribble-0.0.1/scribble.js"></script>
+    <script>document.addEventListener('DOMContentLoaded', function() { window.xeScribble = new Scribble({"pen_color":["#FF0000"],"pen_size":3,"eraser_size":30,"palette":[]}) })</script>
+    <link rel="stylesheet" href="libs/css/hygge-gu.css" type="text/css" />
+  </head>
+  <body>
+    <textarea id="source">
+
+
+
+
+
+class: title-slide, center, middle, inverse
+
+# GLOH 2260 Session 2: The methods of economics
+
+## Equation and graph
+
+&lt;!--- ### Equation and graph ---&gt;
+
+#### Wu Zeng, MD, PhD
+
+&lt;img src="libs/pic/GU.gif" width="10%" align="center" /&gt; 
+
+#### Department of Global Health
+
+#### Georgetown University
+
+### Sept 17 2024
+
+---
+
+# Outline
+
+- ### Economics analysis
+
+- ### Modelling economic relationships
+
+- ### Slope, marginal and incremental
+
+---
+
+# Economics analysis
+
+.pull-left[
+
+- Economic .red[model]: 
+
+  - Representation of the real world
+  
+  - Omit irrelevant variables
+  
+  - .red[*Ceteris paribus*]: Assuming all other variables remain unchanged
+]
+
+.pull-right[
+
+&lt;img src="index_files/figure-html/hvsprice-1.png" width="80%" style="display: block; margin: auto;" /&gt;
+
+]
+---
+
+# Modelling economic relationships
+
+.pull-left[
+
+- Verbally 
+
+- Graphically 
+
+- Algebraically (equations):
+
+`$$y = 10-0.2x$$`
+where `\(y\)` is the number of outpatient visit and `\(x\)` is the price (cost) of the visit
+
+&lt;center&gt;
+
+.large[.red[**Relationship**]]
+
+]
+
+.pull-right[
+
+&lt;img src="index_files/figure-html/hvsprice-1.png" width="80%" style="display: block; margin: auto;" /&gt;
+
+]
+---
+# One more example: supply
+
+&lt;img src="index_files/figure-html/nurse-1.png" width="50%" style="display: block; margin: auto;" /&gt;
+
+---
+
+# Quick questions? 
+
+&gt;&gt; What does the relationship look like between the price of coffee and your consumption of coffee? 
+
+--
+
+&gt;&gt; Now if you own a starbucks, what does the relatinship look like between the price of coffee and production of coffee 
+
+
+---
+# Common relationship 
+.pull-left[
+## Linear relationship
+
+&lt;img src="index_files/figure-html/hvsprice-1.png" width="80%" style="display: block; margin: auto;" /&gt;
+
+] 
+
+.pull-right[
+## Non-linear relationship
+
+&lt;img src="index_files/figure-html/uvsm-1.png" width="80%" style="display: block; margin: auto;" /&gt;
+
+]
+---
+# let us think about a few examples 
+
+.pull-left[
+
+What does the relationship between mortality and age look like?
+
+What does the relationship between weight and height? 
+
+]
+
+.pull-right[
+
+- What does the relationship between wage and age look like?
+
+- How about wage and education (measured by year)?
+
+]
+---
+# Linear relationship: Slope of a straight line 
+
+.pull-left[
+
+&lt;img src="index_files/figure-html/nurse1-1.png" width="90%" style="display: block; margin: auto;" /&gt;
+]
+
+.full-right[
+
+### Slope: 
+
+- What is the change of y in responding to 1 unit change in x
+
+`$$slope = \frac{\Delta Q}{\Delta N} = \frac{400-200}{100-50} = 4$$`
+
+- Common form: `\(y =\beta_0 + \beta_1x_1\)`
+  
+- Extension: if there are more than one variables affecting `\(y\)`, then 
+    - `\(y =\beta_0 + \beta_1x_1 + \beta_2x_2 + ...\)`
+]
+
+
+---
+# The slope of a curved line 
+.pull-left[
+&lt;img src="index_files/figure-html/nurse2-1.png" width="80%" style="display: block; margin: auto;" /&gt;
+
+`$$Q = 8*N - 0.02*N^2-100$$`
+
+]
+
+.pull-right[
+
+When nurses increase from 50 to 75: 
+
+  - at 50, `\(\text{number of patient} = 8*50 -0.02*50^2 -100 = 250\)`
+
+  - at 75, `\(\text{number of patient} = 8*75 -0.02*75^2 -100 = 387.5\)`
+  
+  - `\(slope = \frac{\Delta Q}{\Delta N}= \frac{387.5-250}{75-50} = 5.5\)`
+
+When nurses increase from 100 to 125: 
+
+  - at 100, `\(\text{number of patient} = 8*50 -0.02*50^2 -100 = 500\)`
+
+  - at 125, `\(\text{number of patient} = 8*75 -0.02*75^2 -100 = 587.5\)`
+  
+  - `\(slope = \frac{\Delta Q}{\Delta N}= \frac{587.5-500}{125-100} = 3.5\)`
+
+]
+---
+
+# More common approach to estimate slope (deravatives)
+
+`$$slope = \frac{\Delta Y}{\Delta X} = \frac{dY}{dX} \text{ where } \Delta X \rightarrow 0$$`
+.pull-left[
+&lt;img src="index_files/figure-html/unnamed-chunk-1-1.png" width="80%" style="display: block; margin: auto;" /&gt;
+]
+
+.pull-right[
+
+### slope at 100 
+
+Remember: `\(Q = 8*N-0.02*N^2-100\)`
+
+`\(slope = \frac{dY}{dX} = \frac{dQ}{dN} = 8-0.04*N\)`
+
+when N = 100, `\(slope = 8-0.04*N = 8-0.04*100 = 4\)`
+
+]
+---
+# Marginal analysis 
+
+- Definition: is the study of the consequences of small changes in a variable or variables.
+
+- Marginal utility: The change in total utility derived from a one unit increase in consumption
+
+- Marginal product: The change in total products derived from a one unit increase in input 
+
+&lt;br /&gt;
+
+&lt;center&gt; 
+
+
+### Decision making is mostly based on .red[margin] as magin is related to optimization
+
+---
+# Why margin is related to optimization 
+
+## Consumer: 
+
+Assuming you are vary thirsty, and would like to purchase ice water to quench thirst. One bottom of ice water cost $2. How many bottle do you want to have? or when will you stop buying the ice water?  
+--
+
+Optimize utility for given budget constraints, consumer would consume the amount of good till when .red[marginal utility (Benenfit)] equals .red[marginal cost]
+
+&lt;br /&gt;
+&lt;center&gt; 
+
+### MB = MC 
+
+&lt;center/&gt;
+
+--
+
+When will you stop eating when having dinner in a buffet restaurant? In this case, what is the marginal cost? 
+
+---
+# Relationship between (marginal) utility and consumption: 
+
+.pull-left[
+#### Total utility and consumption 
+&lt;img src="index_files/figure-html/unnamed-chunk-2-1.png" width="80%" style="display: block; margin: auto;" /&gt;
+
+]
+
+--
+
+.pull-right[
+#### Marginal utility and consumption
+&lt;img src="index_files/figure-html/unnamed-chunk-3-1.png" width="80%" style="display: block; margin: auto;" /&gt;
+- .red[Diminishing] marginal utility
+]
+
+---
+### Utility maximization 
+
+- Diminishing marginal utility 
+
+- Increasing marginal cost
+
+&lt;img src="index_files/figure-html/unnamed-chunk-4-1.png" width="45%" style="display: block; margin: auto;" /&gt;
+---
+# Supplier 
+
+--
+
+- .red[Maximization] issue: Supplier would maximize .red[profit], which is revenue minus cost, for given inputs. 
+
+- Supplier will continue producing goods until marginal revenue equals to marginal cost
+
+&lt;center&gt; 
+
+### MR = MC
+
+---
+# How to obtain margins
+
+`$$slope = \frac{\Delta Y}{\Delta X} = \frac{dY}{dX} \text{ where } \Delta X \rightarrow 0$$`
+If X means input and y means product produced from the input, when `\(\Delta X = 1\)` then `\(\Delta Y\)` is .red[marginal product (MR)], which is .red[the slope]
+
+`$$MP = \frac{\Delta Y}{\Delta X} = \frac{\Delta Y}{1} = \Delta Y \text{ when }\Delta X = 1$$`
+
+Thus slope can be interpreted as the change in Y in responding to 1 unit change in X. 
+---
+# Marginal thinking is the heart of economics
+
+&lt;center&gt; 
+
+&lt;iframe width="760" height="428" src="https://www.youtube.com/embed/IZm2v9Nl2hY" title="Essential Austrian Economics: Marginal Thinking" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen&gt;&lt;/iframe&gt;
+
+---
+# People make decision based on margins
+
+&lt;center&gt; 
+
+&lt;iframe width="760" height="428" src="https://www.youtube.com/embed/WQdbdPFEwSo" title="Marginal Benefit and Marginal Cost" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen&gt;&lt;/iframe&gt;
+
+---
+# Explaining Marginal Benefits to Patients...
+
+- ### What was the delamma? 
+
+- ### Does the patient have the righ to know the honest opninion?
+
+- ### However should a doctor respond to an inquiry from a patient about her/his prognosis, particularly when disease is incurable
+
+- ### What information is needed for a doctor to better convey incurable message to patients?
+
+---
+# Medical and economic facts about pancreas cancer chemotherapy
+
+
+&lt;img src="libs/pic/Fig-CCR.png"&gt;
+
+--
+
+- ### Besides economic argument, what else do we need to consider? 
+
+---
+# Increments and margins 
+
+.pull-left[
+Incremental product (IP)
+
+`$$IP = \frac{\Delta Y}{\Delta X} \text{ when }\Delta X &gt; 1$$`
+]
+
+.pull-right[
+Marginal product (MP)
+
+`$$MP = \frac{\Delta Y}{\Delta X} = \frac{\Delta Y}{1} = \Delta Y \text{ when }\Delta X = 1$$`
+]
+
+&gt;&gt; Quick question: Smith bought 2 T shirt with $100, and later he bought additional 3 t shirts. He spent a total of $220 for five t shirts. Can we estimate the marginal spending? what indicator can we estimate? 
+
+--
+
+No, we cannot as we do not know the additional cost when smith bought an additional t shirt. 
+
+We can estimate incremental average spending, which (220-100)/3 = 40
+
+---
+
+class: middle, center, inverse
+
+# .large[Thank you!]
+    </textarea>
+<style data-target="print-only">@media screen {.remark-slide-container{display:block;}.remark-slide-scaler{box-shadow:none;}}</style>
+<script src="https://remarkjs.com/downloads/remark-latest.min.js"></script>
+<script>var slideshow = remark.create({
+"highlightStyle": "github",
+"highlightLines": true,
+"countIncrementalSlides": false,
+"ratio": "16:9"
+});
+if (window.HTMLWidgets) slideshow.on('afterShowSlide', function (slide) {
+  window.dispatchEvent(new Event('resize'));
+});
+(function(d) {
+  var s = d.createElement("style"), r = d.querySelector(".remark-slide-scaler");
+  if (!r) return;
+  s.type = "text/css"; s.innerHTML = "@page {size: " + r.style.width + " " + r.style.height +"; }";
+  d.head.appendChild(s);
+})(document);
+
+(function(d) {
+  var el = d.getElementsByClassName("remark-slides-area");
+  if (!el) return;
+  var slide, slides = slideshow.getSlides(), els = el[0].children;
+  for (var i = 1; i < slides.length; i++) {
+    slide = slides[i];
+    if (slide.properties.continued === "true" || slide.properties.count === "false") {
+      els[i - 1].className += ' has-continuation';
+    }
+  }
+  var s = d.createElement("style");
+  s.type = "text/css"; s.innerHTML = "@media print { .has-continuation { display: none; } }";
+  d.head.appendChild(s);
+})(document);
+// delete the temporary CSS (for displaying all slides initially) when the user
+// starts to view slides
+(function() {
+  var deleted = false;
+  slideshow.on('beforeShowSlide', function(slide) {
+    if (deleted) return;
+    var sheets = document.styleSheets, node;
+    for (var i = 0; i < sheets.length; i++) {
+      node = sheets[i].ownerNode;
+      if (node.dataset["target"] !== "print-only") continue;
+      node.parentNode.removeChild(node);
+    }
+    deleted = true;
+  });
+})();
+// add `data-at-shortcutkeys` attribute to <body> to resolve conflicts with JAWS
+// screen reader (see PR #262)
+(function(d) {
+  let res = {};
+  d.querySelectorAll('.remark-help-content table tr').forEach(tr => {
+    const t = tr.querySelector('td:nth-child(2)').innerText;
+    tr.querySelectorAll('td:first-child .key').forEach(key => {
+      const k = key.innerText;
+      if (/^[a-z]$/.test(k)) res[k] = t;  // must be a single letter (key)
+    });
+  });
+  d.body.setAttribute('data-at-shortcutkeys', JSON.stringify(res));
+})(document);
+(function() {
+  "use strict"
+  // Replace <script> tags in slides area to make them executable
+  var scripts = document.querySelectorAll(
+    '.remark-slides-area .remark-slide-container script'
+  );
+  if (!scripts.length) return;
+  for (var i = 0; i < scripts.length; i++) {
+    var s = document.createElement('script');
+    var code = document.createTextNode(scripts[i].textContent);
+    s.appendChild(code);
+    var scriptAttrs = scripts[i].attributes;
+    for (var j = 0; j < scriptAttrs.length; j++) {
+      s.setAttribute(scriptAttrs[j].name, scriptAttrs[j].value);
+    }
+    scripts[i].parentElement.replaceChild(s, scripts[i]);
+  }
+})();
+(function() {
+  var links = document.getElementsByTagName('a');
+  for (var i = 0; i < links.length; i++) {
+    if (/^(https?:)?\/\//.test(links[i].getAttribute('href'))) {
+      links[i].target = '_blank';
+    }
+  }
+})();
+// adds .remark-code-has-line-highlighted class to <pre> parent elements
+// of code chunks containing highlighted lines with class .remark-code-line-highlighted
+(function(d) {
+  const hlines = d.querySelectorAll('.remark-code-line-highlighted');
+  const preParents = [];
+  const findPreParent = function(line, p = 0) {
+    if (p > 1) return null; // traverse up no further than grandparent
+    const el = line.parentElement;
+    return el.tagName === "PRE" ? el : findPreParent(el, ++p);
+  };
+
+  for (let line of hlines) {
+    let pre = findPreParent(line);
+    if (pre && !preParents.includes(pre)) preParents.push(pre);
+  }
+  preParents.forEach(p => p.classList.add("remark-code-has-line-highlighted"));
+})(document);</script>
+
+<script>
+slideshow._releaseMath = function(el) {
+  var i, text, code, codes = el.getElementsByTagName('code');
+  for (i = 0; i < codes.length;) {
+    code = codes[i];
+    if (code.parentNode.tagName !== 'PRE' && code.childElementCount === 0) {
+      text = code.textContent;
+      if (/^\\\((.|\s)+\\\)$/.test(text) || /^\\\[(.|\s)+\\\]$/.test(text) ||
+          /^\$\$(.|\s)+\$\$$/.test(text) ||
+          /^\\begin\{([^}]+)\}(.|\s)+\\end\{[^}]+\}$/.test(text)) {
+        code.outerHTML = code.innerHTML;  // remove <code></code>
+        continue;
+      }
+    }
+    i++;
+  }
+};
+slideshow._releaseMath(document);
+</script>
+<!-- dynamically load mathjax for compatibility with self-contained -->
+<script>
+(function () {
+  var script = document.createElement('script');
+  script.type = 'text/javascript';
+  script.src  = 'https://mathjax.rstudio.com/latest/MathJax.js?config=TeX-MML-AM_CHTML';
+  if (location.protocol !== 'file:' && /^https?:/.test(script.src))
+    script.src  = script.src.replace(/^https?:/, '');
+  document.getElementsByTagName('head')[0].appendChild(script);
+})();
+</script>
+  </body>
+</html>
